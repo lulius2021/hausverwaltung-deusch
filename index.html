@@ -11,21 +11,25 @@
 </head>
 
 <body class="page">
-  <header>
+  <header class="site-header">
     <div class="container">
       <nav class="nav">
         <!-- Logo -->
-        <div class="logo">
-          <a href="#start">
-            <img
-              src="assets/Hausverwaltung Deusch Logo.png"
-              alt="Hausverwaltung Deusch Logo"
-              class="logo-image"
-            />
-          </a>
-        </div>
+        <a class="logo" href="#start" aria-label="Zur Startseite">
+          <img
+            src="assets/Logo Hausverwaltung Deusch dunkel.png"
+            alt="Hausverwaltung Deusch Logo"
+            class="logo-image"
+          />
+        </a>
 
-        <div class="nav-links" id="nav-links">
+        <!-- Burger (nur Mobile) -->
+        <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <!-- Links -->
+        <div class="nav-links" id="navLinks">
           <a href="#start">Start</a>
           <a href="#ueber-uns">Über uns</a>
           <a href="#projekte">Projekte</a>
@@ -40,17 +44,19 @@
   </header>
 
   <main>
-    <!-- Hero / Start -->
+    <!-- Hero -->
     <section id="start" class="container hero">
       <div class="hero-content fade-in">
         <div class="eyebrow">
           <span class="eyebrow-dot"></span>
           <span>Altstadt · Burghausen</span>
         </div>
+
         <h1>
-          Altbau. Erhalten. Modernisieren.
-          <span class="accent">Mit Herzblut.</span>
+          Altbau. Erhalten.<br/>
+          Modernisieren. <span class="accent">Mit Herzblut.</span>
         </h1>
+
         <p class="hero-lead">
           Hausverwaltung Deusch ist ein bodenständiges Familienunternehmen in Burghausen.
           Wir kümmern uns um Altbaurenovierungen, Kernsanierungen, Wohnungen und Bäder
@@ -65,33 +71,16 @@
 
         <div class="hero-actions">
           <a href="mailto:hausverwaltung@deusch.de" class="btn-primary">
-            Anfrage per E-Mail senden
-            <span>→</span>
+            Anfrage per E-Mail senden <span>→</span>
           </a>
           <a href="#projekte" class="btn-secondary">
             Renovierungsprojekte ansehen
           </a>
         </div>
-
-        <p class="hero-note">
-          Für Menschen, die die Burghauser Altstadt lieben
-          und eine gepflegte, verlässliche Hausverwaltung schätzen.
-        </p>
       </div>
 
       <div class="hero-visual-wrapper fade-in">
         <div class="hero-visual" id="hero-visual"></div>
-        <div class="hero-visual-overlay">
-          <div class="hero-tag">
-            <span class="hero-tag-dot"></span>
-            <span>Altstadt Burghausen bei Sonnenuntergang</span>
-          </div>
-          <div class="hero-info">
-            <strong>Altstadt im Fokus</strong>
-            <p>Unsere Projekte liegen direkt in der Burghauser Altstadt –
-               mit Blick für Geschichte und modernes Wohnen.</p>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -104,8 +93,7 @@
           <p class="section-subtitle">
             Hausverwaltung Deusch steht für bodenständige, verlässliche Arbeit
             in der Burghauser Altstadt. Wir betreuen Altbauwohnungen, Häuser und Bäder
-            so, als würden wir selbst darin wohnen – mit Respekt vor der Substanz
-            und einem klaren Blick für moderne Ansprüche.
+            mit Respekt vor der Substanz und einem klaren Blick für moderne Ansprüche.
           </p>
         </div>
 
@@ -114,9 +102,8 @@
             <div class="about-card fade-in">
               <h3>Familiengeführt & regional verwurzelt</h3>
               <p>
-                Wir sind in Burghausen zu Hause und kennen die Altstadt
-                nicht nur von Plänen, sondern aus dem Alltag. Kurze Wege,
-                direkter Kontakt und Entscheidungen ohne Konzernlogik –
+                Wir sind in Burghausen zu Hause und kennen die Altstadt aus dem Alltag.
+                Kurze Wege, direkter Kontakt und Entscheidungen ohne Konzernlogik –
                 das ist unser Verständnis von Hausverwaltung.
               </p>
               <div class="about-tags">
@@ -129,9 +116,8 @@
               <h3>Altbau erhalten, Wohnen verbessern</h3>
               <p>
                 Unsere Projekte reichen von Kernsanierungen über neue Bäder
-                bis zur kompletten Modernisierung ganzer Wohnungen. Ziel:
-                den Charakter des Altbaus bewahren – und gleichzeitig
-                Komfort, Sicherheit und Energieeffizienz auf ein modernes Niveau bringen.
+                bis zur Aufwertung von Außenbereichen. Ziel ist immer:
+                langlebige Qualität und ein stimmiges Wohngefühl.
               </p>
               <div class="about-tags">
                 <span class="about-tag">Kernsanierung</span>
@@ -161,7 +147,6 @@
                 />
               </div>
 
-              <!-- NEU: echte Vorschau statt Platzhalter -->
               <div class="about-photo fade-in">
                 <img
                   src="assets/projects/140_wohnung_vorschau.JPG"
@@ -183,44 +168,29 @@
           <div class="section-eyebrow">Projekte</div>
           <div class="section-title">Einblicke in unsere Arbeit</div>
           <p class="section-subtitle">
-            Drei Beispiele aus der Burghauser Altstadt: Badmodernisierung, Kernsanierung einer Wohnung
-            und eine Altstadt-Terrasse mit einzigartigem Blick auf die Burghauser Burg.
+            Drei Beispiele aus der Burghauser Altstadt: Kernsanierung, Badmodernisierung und eine Terrasse mit Burgblick.
           </p>
         </div>
 
         <div class="projects-grid">
-          <!-- Projekt 1: Wohnung Kernsanierung -->
+          <!-- Wohnung Kernsanierung -->
           <article class="project-card fade-in">
             <div class="project-media">
-              <div class="project-media-split">
-                <div class="project-before">
-                  <img
-                    src="assets/projects/181_wohnung_vorher.jpg"
-                    alt="Wohnung Kernsanierung vorher"
-                    class="project-image"
-                    loading="lazy"
-                  />
-                  <div class="project-label">Vorher</div>
-                </div>
-                <div class="project-after">
-                  <img
-                    src="assets/projects/181_wohnung_nachher.jpg"
-                    alt="Wohnung Kernsanierung nachher"
-                    class="project-image"
-                    loading="lazy"
-                  />
-                  <div class="project-label">Nachher</div>
-                </div>
+              <div class="project-half">
+                <img src="assets/projects/181_wohnung_vorher.jpg" alt="Wohnung vorher" class="project-image" loading="lazy"/>
+                <span class="project-label">Vorher</span>
+              </div>
+              <div class="project-half">
+                <img src="assets/projects/181_wohnung_nachher.jpg" alt="Wohnung nachher" class="project-image" loading="lazy"/>
+                <span class="project-label right">Nachher</span>
               </div>
             </div>
+
             <div class="project-body">
-              <h3 class="project-title">
-                Kernsanierung einer 2-Zimmer-Altbauwohnung
-              </h3>
+              <h3 class="project-title">Kernsanierung einer 2-Zimmer-Altbauwohnung</h3>
               <p class="project-desc">
-                Aus einer stark in die Jahre gekommenen Wohnung wurde ein klarer, moderner Wohnraum:
-                neuer Grundriss, komplett erneuerte Elektroinstallation und ein stimmiges Gesamtbild,
-                das den Altbaucharakter respektiert.
+                Neuer Grundriss, komplette Erneuerung der Elektroinstallation und ein modernes Finish,
+                ohne den Charakter der Wohnung zu verlieren.
               </p>
               <div class="project-meta">
                 <span class="project-pill">Kernsanierung</span>
@@ -228,101 +198,68 @@
                 <span class="project-pill">2 Zimmer</span>
               </div>
               <div class="project-footer">
-                <span class="project-highlight">
-                  Neue Stromleitungen für mehr Sicherheit · optimierte Raumaufteilung
-                </span>
+                <span class="project-highlight">Neue Stromleitungen · optimierte Raumaufteilung</span>
                 <span>Baujahr: 1971</span>
               </div>
             </div>
           </article>
 
-          <!-- Projekt 2: Bad -->
+          <!-- Bad -->
           <article class="project-card fade-in">
             <div class="project-media">
-              <div class="project-media-split">
-                <div class="project-before">
-                  <img
-                    src="assets/projects/140_bad_vorher.jpg"
-                    alt="Bad Renovierung vorher"
-                    class="project-image"
-                    loading="lazy"
-                  />
-                  <div class="project-label">Vorher</div>
-                </div>
-                <div class="project-after">
-                  <img
-                    src="assets/projects/140_bad_nachher.jpg"
-                    alt="Bad Renovierung nachher"
-                    class="project-image"
-                    loading="lazy"
-                  />
-                  <div class="project-label">Nachher</div>
-                </div>
+              <div class="project-half">
+                <img src="assets/projects/140_bad_vorher.jpg" alt="Bad vorher" class="project-image" loading="lazy"/>
+                <span class="project-label">Vorher</span>
+              </div>
+              <div class="project-half">
+                <img src="assets/projects/140_bad_nachher.jpg" alt="Bad nachher" class="project-image" loading="lazy"/>
+                <span class="project-label right">Nachher</span>
               </div>
             </div>
+
             <div class="project-body">
-              <h3 class="project-title">
-                Badmodernisierung im Altbau
-              </h3>
+              <h3 class="project-title">Badmodernisierung im Altbau</h3>
               <p class="project-desc">
                 Rückbau bis auf den Rohbau und Neuaufbau mit moderner Leitungsführung,
-                sauberer Abdichtung und einem Badkonzept, das zeitlos wirkt und im Alltag funktioniert.
+                sauberer Abdichtung und einem zeitlosen Badkonzept.
               </p>
               <div class="project-meta">
                 <span class="project-pill">Badmodernisierung</span>
                 <span class="project-pill">Burghausen Altstadt</span>
               </div>
               <div class="project-footer">
-                <span class="project-highlight">
-                  Neue Wasser- & Abwasserleitungen · bessere Raumnutzung
-                </span>
+                <span class="project-highlight">Neue Wasser- & Abwasserleitungen · bessere Raumnutzung</span>
                 <span>Dauer: ca. 6–8 Wochen</span>
               </div>
             </div>
           </article>
 
-          <!-- Projekt 3: Terrasse -->
+          <!-- Terrasse -->
           <article class="project-card fade-in">
             <div class="project-media">
-              <div class="project-media-split">
-                <div class="project-before">
-                  <img
-                    src="assets/projects/140_terrasse_vorher.jpg"
-                    alt="Altstadt Terrasse vorher"
-                    class="project-image"
-                    loading="lazy"
-                  />
-                  <div class="project-label">Vorher</div>
-                </div>
-                <div class="project-after">
-                  <img
-                    src="assets/projects/140_terrasse_nachher.jpg"
-                    alt="Altstadt Terrasse nachher"
-                    class="project-image"
-                    loading="lazy"
-                  />
-                  <div class="project-label">Nachher</div>
-                </div>
+              <div class="project-half">
+                <img src="assets/projects/140_terrasse_vorher.jpg" alt="Terrasse vorher" class="project-image" loading="lazy"/>
+                <span class="project-label">Vorher</span>
+              </div>
+              <div class="project-half">
+                <img src="assets/projects/140_terrasse_nachher.jpg" alt="Terrasse nachher" class="project-image" loading="lazy"/>
+                <span class="project-label right">Nachher</span>
               </div>
             </div>
+
             <div class="project-body">
-              <h3 class="project-title">
-                Altstadt-Terrasse mit einmaligem Blick auf die Burghauser Burg
-              </h3>
+              <h3 class="project-title">Altstadt-Terrasse mit Burgblick</h3>
               <p class="project-desc">
-                Aus einem einfachen Außenbereich wurde eine ruhige, hochwertige Terrasse:
-                klare Materialien, saubere Kanten, stimmige Details – und ein Blick,
-                der in Burghausen wirklich etwas Besonderes ist.
+                Saubere Details, hochwertige Materialien und ein Außenbereich, der echte Wohnqualität schafft,
+                mit einem Blick auf die Burghauser Burg.
               </p>
               <div class="project-meta">
-                <span class="project-pill">Terrasse / Balkon</span>
-                <span class="project-pill">Burghausen Altstadt</span>
+                <span class="project-pill">Terrasse</span>
+                <span class="project-pill">Altstadt</span>
                 <span class="project-pill">Burgblick</span>
               </div>
               <div class="project-footer">
-                <span class="project-highlight">
-                  Aufwertung des Außenbereichs · langlebige Ausführung · mehr Wohnqualität
-                </span>
+                <span class="project-highlight">Aufwertung Außenbereich · langlebige Ausführung</span>
                 <span>Fokus: Außenraum</span>
               </div>
             </div>
@@ -336,16 +273,14 @@
       <div class="container">
         <div class="contact-card fade-in">
           <div>
-            <h2 class="contact-title">Kontakt zur Hausverwaltung Deusch</h2>
+            <h2 class="contact-title">Kontakt</h2>
             <p class="contact-text">
-              Sie interessieren sich für eine sanierte Wohnung in der
-              Burghauser Altstadt oder möchten mehr über unsere Projekte erfahren?
-              Schreiben Sie uns eine kurze E-Mail.
+              Sie interessieren sich für eine sanierte Wohnung in der Burghauser Altstadt
+              oder möchten mehr über unsere Projekte erfahren? Schreiben Sie uns eine E-Mail.
             </p>
 
             <a href="mailto:hausverwaltung@deusch.de" class="contact-email">
-              <span>✉</span>
-              hausverwaltung@deusch.de
+              <span>✉</span> hausverwaltung@deusch.de
             </a>
 
             <p class="contact-note">
@@ -355,11 +290,11 @@
           </div>
 
           <div class="contact-aside">
-            <strong>Was wir tun</strong>
+            <strong>Schwerpunkt</strong>
             <p>
-              · Betreuung von Altstadt-Objekten in Burghausen<br />
-              · Modernisierung und Sanierung unserer Bestände<br />
-              · Verlässliche Hausverwaltung mit klaren Standards
+              · Altstadt-Objekte in Burghausen<br/>
+              · Modernisierung und Sanierung unserer Bestände<br/>
+              · Hausverwaltung mit klaren Standards
             </p>
           </div>
         </div>

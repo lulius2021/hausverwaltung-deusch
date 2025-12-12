@@ -9,20 +9,22 @@
 </head>
 
 <body class="page">
-  <header>
+  <header class="site-header">
     <div class="container">
       <nav class="nav">
-        <div class="logo">
-          <a href="index.html#start">
-            <img
-              src="assets/Hausverwaltung Deusch Logo.png"
-              alt="Hausverwaltung Deusch Logo"
-              class="logo-image"
-            />
-          </a>
-        </div>
+        <a class="logo" href="index.html#start" aria-label="Zur Startseite">
+          <img
+            src="assets/Logo Hausverwaltung Deusch dunkel.png"
+            alt="Hausverwaltung Deusch Logo"
+            class="logo-image"
+          />
+        </a>
 
-        <div class="nav-links" id="nav-links">
+        <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="navLinks">
           <a href="index.html#start">Start</a>
           <a href="index.html#ueber-uns">Über uns</a>
           <a href="index.html#projekte">Projekte</a>
@@ -42,8 +44,7 @@
         <div class="legal-text">
           <h1>Impressum</h1>
 
-          <p>
-            <strong>Hausverwaltung Deusch</strong><br>
+          <p><strong>Hausverwaltung Deusch</strong><br>
             Inhaber: Henning Deusch<br>
             In den Grüben 140<br>
             84489 Burghausen<br>
@@ -60,7 +61,7 @@
           <h2>Unternehmensform</h2>
           <p>Einzelunternehmen</p>
 
-          <h2>Gewerbeerlaubnis nach § 34c GewO</h2>
+          <h2>Gewerbeerlaubnis nach §34c GewO</h2>
           <p>
             Erlaubnisbehörde: Landratsamt Altötting<br>
             Datum der Erlaubniserteilung: <strong>[Platzhalter]</strong>
@@ -86,8 +87,8 @@
 
           <h2>Urheberrecht</h2>
           <p>
-            Alle Inhalte dieser Website unterliegen dem deutschen Urheberrecht. Eine Verwendung oder Vervielfältigung
-            ist nur mit schriftlicher Zustimmung des Betreibers gestattet.
+            Alle Inhalte dieser Website unterliegen dem deutschen Urheberrecht.
+            Eine Verwendung oder Vervielfältigung ist nur mit schriftlicher Zustimmung des Betreibers gestattet.
           </p>
         </div>
       </div>
