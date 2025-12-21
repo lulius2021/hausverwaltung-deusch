@@ -4,107 +4,116 @@
   <meta charset="UTF-8" />
   <title>Impressum – Hausverwaltung Deusch</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="noindex" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="description" content="Impressum der Hausverwaltung Deusch." />
+
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <script defer src="./assets/js/main.js"></script>
 </head>
 
-<body class="page">
-  <header class="site-header">
+<body class="page page--legal">
+
+  <!-- HEADER -->
+  <header class="site-header site-header--blend">
     <div class="container">
-      <nav class="nav">
-        <a class="logo" href="index.html#start" aria-label="Zur Startseite">
-          <img
-            src="assets/Logo Hausverwaltung Deusch dunkel.png"
-            alt="Hausverwaltung Deusch Logo"
-            class="logo-image"
-          />
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a class="logo" href="index.html#start">
+          <img class="logo-image" src="./assets/img/Logo.png" alt="Hausverwaltung Deusch" />
         </a>
 
-        <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+        <button class="nav-toggle" id="navToggle"
+                aria-expanded="false"
+                aria-controls="navLinks"
+                aria-label="Menü öffnen">
           <span></span><span></span><span></span>
         </button>
 
         <div class="nav-links" id="navLinks">
           <a href="index.html#start">Start</a>
-          <a href="index.html#ueber-uns">Über uns</a>
-          <a href="index.html#projekte">Projekte</a>
-          <a href="index.html#kontakt">Kontakt</a>
-
-          <a href="mailto:hausverwaltung@deusch.de" class="nav-cta">
-            Kontakt per E-Mail <span>→</span>
-          </a>
+          <a href="angebot.html">Angebot</a>
+          <a href="projects.html">Projekte</a>
+          <a class="nav-cta" href="mailto:hausverwaltung.deusch@gmail.com">Kontakt</a>
         </div>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section>
-      <div class="container">
-        <div class="legal-text">
-          <h1>Impressum</h1>
+  <main id="content">
+    <section class="container">
+      <div class="section-header fade-in">
+        <div class="section-eyebrow">Rechtliches</div>
+        <div class="section-title">Impressum</div>
+        <p class="section-subtitle">
+          Angaben gemäß § 5 TMG.
+        </p>
+      </div>
 
-          <p><strong>Hausverwaltung Deusch</strong><br>
-            Inhaber: Henning Deusch<br>
-            In den Grüben 140<br>
-            84489 Burghausen<br>
-            Deutschland
-          </p>
+      <div class="legal-text fade-in">
+        <h2>Anbieter</h2>
+        <p>
+          <strong>Hausverwaltung Deusch</strong><br />
+          Einzelunternehmen<br />
+          Inhaber: Henning Deusch<br />
+          In den Grüben 140<br />
+          84489 Burghausen<br />
+          Deutschland
+        </p>
 
-          <h2>Kontakt</h2>
-          <p>
-            Telefon: 01623172876<br>
-            E-Mail: <a href="mailto:hausverwaltung@deusch.de">hausverwaltung@deusch.de</a><br>
-            Website: <a href="https://www.hausverwaltung-deusch.de">www.hausverwaltung-deusch.de</a>
-          </p>
+        <h2>Kontakt</h2>
+        <p>
+          Telefon: <a class="inline-link" href="tel:+491623172876">01623 172876</a><br />
+          E-Mail: <a class="inline-link" href="mailto:hausverwaltung.deusch@gmail.com">hausverwaltung.deusch@gmail.com</a>
+        </p>
 
-          <h2>Unternehmensform</h2>
-          <p>Einzelunternehmen</p>
 
-          <h2>Gewerbeerlaubnis nach §34c GewO</h2>
-          <p>
-            Erlaubnisbehörde: Landratsamt Altötting<br>
-            Datum der Erlaubniserteilung: <strong>[Platzhalter]</strong>
-          </p>
+        <h2>Aufsichtsbehörde</h2>
+        <p>
+          Zuständige Aufsichtsbehörde: <em>bitte ergänzen</em><br />
+          (Falls keine spezifische Aufsicht besteht: diesen Absatz entfernen.)
+        </p>
 
-          <h2>Umsatzsteuer-ID</h2>
-          <p><strong>[Platzhalter – falls vorhanden]</strong></p>
+        <h2>Streitschlichtung</h2>
+        <p>
+          Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+          <a class="inline-link" href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr/</a>.
+          <br />
+          Wir sind nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+        </p>
 
-          <h2>Berufshaftpflichtversicherung</h2>
-          <p>
-            Versicherer: <strong>[Platzhalter]</strong><br>
-            Räumlicher Geltungsbereich: Deutschland
-          </p>
+        <h2>Haftung für Inhalte</h2>
+        <p>
+          Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
+          Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen
+          oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+        </p>
 
-          <h2>Verantwortlich nach § 18 Abs. 2 MStV</h2>
-          <p>Henning Deusch, In den Grüben 140, 84489 Burghausen</p>
+        <h2>Haftung für Links</h2>
+        <p>
+          Unser Angebot enthält ggf. Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese
+          fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+        </p>
 
-          <h2>Haftungsausschluss</h2>
-          <p>
-            Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links.
-            Für den Inhalt verlinkter Seiten sind ausschließlich deren Betreiber verantwortlich.
-          </p>
-
-          <h2>Urheberrecht</h2>
-          <p>
-            Alle Inhalte dieser Website unterliegen dem deutschen Urheberrecht.
-            Eine Verwendung oder Vervielfältigung ist nur mit schriftlicher Zustimmung des Betreibers gestattet.
-          </p>
-        </div>
+        <h2>Urheberrecht</h2>
+        <p>
+          Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht.
+          Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
+        </p>
       </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <div class="container footer-inner">
-      <span>© <span id="year"></span> Hausverwaltung Deusch · Burghausen</span>
+      <div>© <span id="year"></span> Hausverwaltung Deusch</div>
       <div class="footer-links">
-        <a href="impressum.html">Impressum</a>
+        <a href="impressum.html" aria-current="page">Impressum</a>
         <a href="datenschutz.html">Datenschutz</a>
+      </div>
+      <div>
+        <a class="inline-link" href="mailto:hausverwaltung.deusch@gmail.com">hausverwaltung.deusch@gmail.com</a>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js" defer></script>
 </body>
 </html>
