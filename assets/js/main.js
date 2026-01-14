@@ -66,6 +66,7 @@
   ========================= */
   const navToggle = document.getElementById("navToggle");
   const navLinks = document.getElementById("navLinks");
+  const pageBody = document.body;
 
   if (navToggle && navLinks) {
     const isOpen = () => navLinks.classList.contains("open");
@@ -73,11 +74,13 @@
     const openMenu = () => {
       navLinks.classList.add("open");
       navToggle.setAttribute("aria-expanded", "true");
+      pageBody.classList.add("nav-open");
     };
 
     const closeMenu = () => {
       navLinks.classList.remove("open");
       navToggle.setAttribute("aria-expanded", "false");
+      pageBody.classList.remove("nav-open");
     };
 
     navToggle.addEventListener("click", e => {
